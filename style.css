@@ -69,7 +69,7 @@ nav div img {
 #navLink a::before {
   position: absolute;
   content: "";
-  background-color: rgba(116, 61, 61, 0.568);
+  background-color: #FF6F61;
   top: 100%;
   width: 100%;
   height: 100%;
@@ -81,7 +81,7 @@ nav div img {
 
 #navLink a:hover::before {
   top: 0%;
-  z-index: 0;
+  z-index: -1;
   transition: 0.3s ease-in-out;
   
 }
@@ -89,7 +89,7 @@ nav div img {
   
 #navLink a:hover {
   z-index: 9;
-color: rgb(241, 17, 17);
+color: rgb(243, 243, 243);
 }
 
 

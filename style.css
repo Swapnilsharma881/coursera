@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+}
+
+#landing {
+  height: 100%;
+  width: 100%;
+  background-color: #ff6f61;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: #FFFFFF;
+}
+
+nav div {
+  width: auto;
+  height: 100px;
+  margin: 10px 0px 0 20px;
+}
+nav div img {
+  height: 80px;
+}
+
+#navLink {
+  width: 80%;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  justify-content: space-around;
+  /* padding:0 150px 0 150px; */
+  position: relative;
+}
+
+#navLink a {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 5px;
+  text-decoration: none;
+  /* font-family: "kanit"; */
+  text-transform: uppercase;
+  color: black;
+  z-index: 9;
+  overflow: hidden;
+}
+
+#navLink a::before {
+  position: absolute;
+  content: "";
+  background-color: rgba(116, 61, 61, 0.568);
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  left: 0%;
+  border-radius: 50px;
+  z-index: 0;
+  /* overflow: hidden; */
+}
+
+#navLink a:hover::before {
+  top: 0%;
+  z-index: 0;
+  transition: 0.3s ease-in-out;
+  
+}
+
+  
+#navLink a:hover {
+  z-index: 9;
+color: rgb(241, 17, 17);
+}
+
+
+@keyframes navBar {
+  0% {
+    top: 0%;
+  }
+  100% {
+    top: 0%;
+  }
+}
